@@ -1,0 +1,32 @@
+.faq-section {
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    
+  }
+  .faq-item {
+    border-radius: 5px;
+    border-bottom: 2px solid #444;
+    padding: 15px 0;
+  }
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+  }
+  .faq-icon {
+    transition: transform 0.3s;
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .faq-item.active .faq-answer {
+    max-height: 100px; /* Adjust based on content */
+  }
+  .faq-item.active .faq-icon {
+    transform: rotate(90deg);
+  }
+  

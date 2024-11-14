@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+
+/* header*/
+
+.banner-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 70px;
+    width: auto;
+}
+/* Hamburger Icon Styling */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+/* Navbar Styling */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s, border-radius 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #e21b5c;
+    border-radius: 5px;
+}
+
+/* Active link styling */
+.hm {
+    border-bottom: 3px solid #e21b5c;
+    width: auto;
+}
+
+/* Collapse navbar links when viewed on small screens */
+.navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.about{
+    margin: 0px 0px 30px 0px;
+}
+
+.about-content{
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-content h5{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    color: #808080;
+}
+.about-content h2{
+    margin-top: 15px;
+    font-size: 32px;
+    /* font-family: poppins; */
+}
+.met{
+    color: #e21b5c;
+}
+.about-content p{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #808080;
+   
+}
+
+.about-content img{
+    height: 300px;
+    width: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* stuff profile */
+.stuff-pro{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.band-members{
+    text-align: center;
+}
+.band-members img{
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.member-dt p{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 11px;
+        color: #808080;
+}
+.member-dt h3{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: .1rem;
+}
+
+/* Footer */
+
+footer{
+    background-color: #101010;
+    padding: 30px;
+}
+
+.main-footer{
+    color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+.footer-section {
+    flex: 1 1 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-section a:hover {
+    color: #d3d3d3;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #d3d3d3;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e21b5c;
+}
+
+.links a {
+    display: block;
+    margin: 5px 0;
+}
+.copyright{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    footer .footer-section {
+        margin: 15px 0;
+    }
+}
+
+
+/* /* Responsive design */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    footer .footer-section {
+        margin: 15px 0;
+    }
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .about-content {
+        width: 80%; /* Reduce width for smaller screens */
+    }
+
+    .about-content h2 {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .about-content p {
+        font-size: 16px; /* Increase font size for readability */
+    }
+
+    .album-container {
+        width: 90%; /* Make the album container more fluid */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .album-title {
+        font-size: 28px; /* Scale down the album title */
+    }
+
+    .track {
+        padding: 8px 12px; /* Reduce padding */
+    }
+
+    .track-name {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .about-content {
+        width: 90%; /* Further reduce width */
+    }
+
+    .about-content h5 {
+        font-size: 10px; /* Scale down the subtitle */
+    }
+
+    .about-content h2 {
+        font-size: 24px; /* Smaller title on mobile */
+    }
+
+    .about-content p {
+        font-size: 16px; /* Larger text for mobile */
+    }
+
+    .about-content img {
+        height: 250px; /* Reduce image size on smaller screens */
+        margin-top: 20px;
+    }
+
+    .album-container {
+        width: 95%; /* Further reduce width of album container */
+        padding: 12px; /* Reduce padding */
+    }
+
+    .album-title {
+        font-size: 24px; /* Smaller album title */
+    }
+
+    .track {
+        padding: 8px 10px; /* Reduce padding on smaller devices */
+    }
+
+    .track-number {
+        font-size: 14px; /* Smaller track number */
+    }
+
+    .track-name {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .track-duration {
+        font-size: 12px; /* Make duration smaller */
+    }
+}
+
+/* Very Small Screens (Extra small mobile) */
+@media (max-width: 480px) {
+    .about-content {
+        width: 100%; /* Make the about section take full width */
+    }
+
+    .about-content h5 {
+        font-size: 8px; /* Further reduce subtitle */
+    }
+
+    .about-content h2 {
+        font-size: 22px; /* Smaller title for very small screens */
+    }
+
+    .about-content p {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .about-content img {
+        height: 200px; /* Even smaller image on extra small screens */
+    }
+
+    .album-container {
+        width: 100%; /* Make album container fluid */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .album-title {
+        font-size: 22px; /* Smaller title for very small screens */
+    }
+
+    .track {
+        padding: 8px 5px; /* Further reduce padding */
+    }
+
+    .track-number {
+        font-size: 12px; /* Even smaller track number */
+    }
+
+    .track-name {
+        font-size: 12px; /* Adjust track name font size */
+    }
+
+    .track-duration {
+        font-size: 10px; /* Smaller track duration */
+    }
+}
